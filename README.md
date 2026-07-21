@@ -1,134 +1,146 @@
-# 🖥️ Network Topology Simulator & Cost Estimator  
+# 🖥️ Network Topology Simulator & Cost Estimator
 
-### 📚 Project Overview  
+### 📚 Project Overview
+
 This Python-based **Network Topology Simulator** allows users to design and analyze various **network topologies** such as Bus, Star, Ring, Mesh, and Tree.  
-It provides an **interactive GUI** built with Tkinter to visualize each topology, calculate the **total network cost**, and generate a **detailed report** including all parameters and results.
+It provides an **interactive Tkinter GUI** to visualize each topology, calculate the **total network cost**, switch seamlessly between **Light and Dark themes**, and generate a **detailed report (Word DOCX)** including all parameters and diagram results.
 
 ---
 
-### ⚙️ Features  
+### ⚙️ Features
+
 ✅ Generate and visualize topologies: **Bus, Star, Ring (3 variants), Mesh, Tree**  
-✅ Automatic cost calculation (port + cable cost)  
+✅ Automatic cost calculation (port cost + cable cost)  
 ✅ Step-by-step breakdown of total cost  
-✅ Interactive graph view (zoom, pan, save)  
-✅ Built-in **Learning Mode** – theory + video reference  
-✅ “Developed By” credits section with images  
-✅ Export detailed **Word report (DOCX)**  
-✅ Smooth and clean **Tkinter GUI**  
+✅ **Dynamic Light / Dark Mode Theme Toggle** 🌙☀️  
+✅ Interactive graph view (zoom, pan, save diagram)  
+✅ Built-in **Learning Mode** – theory + video references  
+✅ **Full-size Credits & Contributors Window** with profile cards  
+✅ Export detailed **Word report (DOCX)** with graph images embedded  
+✅ Smooth and responsive **Tkinter GUI**
 
 ---
 
-### 🧩 Tech Stack  
-- **Python 3.11+**  
-- **Tkinter** – GUI Framework  
-- **NetworkX** – Network graph creation  
-- **Matplotlib** – Visualization  
-- **Pillow (PIL)** – Image handling  
-- **python-docx** – Report generation  
-- **tkhtmlview** – Embedded content  
+### 🧩 Tech Stack
+
+- **Python 3.11+**
+- **Tkinter** – GUI Framework
+- **NetworkX** – Network graph creation
+- **Matplotlib** – Graph Visualization
+- **Pillow (PIL)** – Image & avatar handling
+- **python-docx** – Detailed report generation
 
 ---
 
-### 🖼️ Application Preview  
+### 🖼️ Application Preview
+
 ![Application Screenshot](./screenshot.png)
 
+---
+
+### 🧮 How It Works
+
+1. **Enter Inputs:**
+   - Number of nodes
+   - Select topology type
+   - (For Ring) choose variant
+   - Enter port cost, cable length, and cost per meter
+
+2. **Click “Generate Topology”**
+   - Visualizes your chosen topology
+   - Calculates total cost
+   - Displays step-by-step cost breakdown
+
+3. **Toggle Themes (Optional)**
+   - Click **🌙 Dark Mode** / **☀️ Light Mode** in the header bar to switch themes at any time
+
+4. **Click “Download Report”**
+   - Exports results and topology diagram to a formatted **Word document (.docx)**
 
 ---
 
-### 🧮 How It Works  
+### 📄 Report Generation
 
-1. **Enter Inputs:**  
-   - Number of nodes  
-   - Select topology type  
-   - (For Ring) choose variant  
-   - Enter port cost, cable length, and cost per meter  
-
-2. **Click “Generate Topology”**  
-   - Visualizes your chosen topology  
-   - Calculates total cost  
-   - Displays step-by-step cost breakdown  
-
-3. **Click “Download Report”**  
-   - Exports results to a formatted **Word document**  
-
----
-
-### 📄 Report Generation  
 Each report includes:
-- Input parameters  
-- Step-by-step cost calculations  
-- Topology diagram  
-- List of all connections  
-- Footer with project details  
+
+- Input parameters
+- Step-by-step cost calculations
+- High-resolution topology diagram
+- List of all node connections
+- Footer with project details
 
 ---
 
-### 🧑‍💻 Developed By  
-- **Abijith Thennarasu (24BCE1626)**  
-- **Dharmayu Jadwani**  
-- Guided by **Dr. Swaminathan Annadurai**
+### 🧑‍💻 Developed By
+
+- **Abijith Thennarasu (24BCE1626)** – Lead Developer
+- **Dharmayu Jadwani** – Project Contributor
+- Guided by **Dr. Swaminathan Annadurai** – Faculty Advisor
 
 ---
 
-### 🧠 Learning Mode  
+### 🧠 Learning Mode
+
 Learn the concepts of each topology right inside the app with a detailed theoretical explanation and direct access to an animated YouTube tutorial:  
 🎥 [Network Topology Explanation](https://www.youtube.com/watch?v=zbqrNg4C98U)
 
 ---
 
-### 🚀 How to Run  
+### 🚀 How to Run
 
-1. **Clone the repository**  
+1. **Navigate to the repository**
+
    ```bash
-   git clone https://github.com/<your-username>/Network-Topology-Simulator.git
    cd Network-Topology-Simulator
    ```
 
-2. **Install dependencies**  
+2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application**  
+3. **Run the application**
    ```bash
    python network_topology_gui.py
    ```
 
 ---
 
-### 📦 Requirements  
-If you face missing module errors, install these manually:
+### 📦 Requirements
+
+If installing manually without `requirements.txt`:
+
 ```bash
-pip install networkx matplotlib pillow python-docx tkhtmlview
+pip install networkx matplotlib pillow python-docx numpy
 ```
 
 ---
 
-### 🧰 Folder Structure  
+### 🧰 Folder Structure
+
 ```
 Network-Topology-Simulator/
 │
 ├── network_topology_gui.py        # Main application code
-├── computer.png                   # Node icon
-├── professor.png                  # Professor image
-├── abijith.jpeg                   # Developer image
-├── dharmyu.jpeg                   # Developer image
+├── computer.png                   # Node icons
 ├── requirements.txt               # Dependencies
-├── screenshot.png                 # Application GUI image
-├── README.md                      # Project documentation
-└── report/                        # Sample Report
+├── screenshot.png                 # Application GUI preview image
+└── README.md                      # Project documentation
 ```
 
 ---
 
-### 🏆 Credits  
+### 🏆 Credits
+
 > Developed as part of **Computer Networks (DA Project)**  
 > **VIT Chennai**  
-> Faculty Guide: *Dr. Swaminathan Annadurai*  
+> Faculty Guide: _Dr. Swaminathan Annadurai_
 
 ---
 
-### 📬 Contact  
+### 📬 Contact
+
 **Abijith Thennarasu**  
 📧 abijith.thennarasu2024@vitstudent.ac.in  
-📍 VIT Chennai  
+📍 VIT Chennai
